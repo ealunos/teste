@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+}
+
+#principal {
+    background-color:gray;
+    height:700px;
+    width: 1000px;
+    margin:auto;
+}
+
+
+#cabecalho {
+    background-color: blue;
+    height:150px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+#conteudo {
+    background-color:red;
+    margin-top: 10px;
+    height:300px;
+    width: 710px;
+    float:left;
+
+}
+#menu {
+    background-color:yellow;
+    margin-top: 10px;
+    height:300px;
+    float: right;
+    width: 210px;
+}
+#rodape {
+    clear: both;
+    background-color: green;
+    height:100px;
+    margin-top:10px;
+}
