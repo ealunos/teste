@@ -21,8 +21,10 @@
     background-color:red;
     margin-top: 10px;
     height:300px;
-    width: 710px;
+    width: 760px;
     float:left;
+    margin-bottom: 10px;
+    margin-left: 10px;
 
 }
 #menu {
@@ -31,10 +33,12 @@
     height:300px;
     float: right;
     width: 210px;
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 #rodape {
     clear: both;
     background-color: green;
     height:100px;
-    margin-top:10px;
+    margin: 0px 10px 0px 10px;
 }
