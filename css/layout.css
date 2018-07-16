@@ -1,44 +1,14 @@
 *{
     margin: 0px;
 }
-
-#principal {
-    background-color:gray;
-    height:700px;
-    width: 1000px;
-    margin:auto;
+#cabecalho{padding: 10px;
+   margin-top: 20px;
+    color: white;
 }
+h2{
 
-
-#cabecalho {
-    background-color: blue;
-    height:150px;
-    margin-left: 10px;
-    margin-right: 10px;
-
+   text-shadow: 1px 1px 2px black;
 }
-#conteudo {
-    background-color:red;
-    margin-top: 10px;
-    height:300px;
-    width: 760px;
-    float:left;
-    margin-bottom: 10px;
-    margin-left: 10px;
-
-}
-#menu {
-    background-color:yellow;
-    margin-top: 10px;
-    height:300px;
-    float: right;
-    width: 210px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-}
-#rodape {
-    clear: both;
-    background-color: green;
-    height:100px;
-    margin: 0px 10px 0px 10px;
+#conteudo{
+    height: 300px;
 }
