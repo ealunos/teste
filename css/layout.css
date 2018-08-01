@@ -2,13 +2,23 @@
     margin: 0px;
 }
 #cabecalho{padding: 10px;
-   margin-top: 20px;
-    color: white;
-}
+   margin-top: 8%;
+  color: white;}
+
+  
 h2{
 
    text-shadow: 1px 1px 2px black;
 }
-#conteudo{
-    height: 300px;
+
+
+#imgconteudo{
+        width: 100%;
+       
 }
+
+footer{
+    margin-top: 30px;
+    color: white;
+    padding: 10px
+   }

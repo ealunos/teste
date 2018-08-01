@@ -1,73 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PROJETO SITE - TURMA B</title>
-    <link rel="stylesheet" href="css/layout.css"> 
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <style>
-    .col{
-        border-style: solid;
-        border-color:black;
-    size:2px;
-    }
-
-
-    </style>
+    <!--Linkando o JQuery-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!--FUNÇÃO DO MENU PARA CHAMAR PÁGINAS-->
+    <script>
+        function carregar(pagina) {
+            $("#conteudo").load(pagina);
+        }
+    </script>
 </head>
+
 <body>
 
     <div class="container" id="principal">
-                            
-            <div   id="cabecalho" class="media row text-center bg-primary mb-3">
-                   <img src="img/logo.jpeg" class="border border-primary rounded-circle mr-3">
-                    <div class="media-body">
-                      <h2 class="mt-0">ESCOLA ESTADUAL<br> CARLOS DRUMMOND DE ANDRADE</h2>
-                      <h3>Sejam Bem Vindo ao nosso Site</h3>
-                      <h4>Anastácio - MS / 2018</h4><br>
-                    </div>
+        <!--Nav bar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">MedioTec</a>
+            <!--Botão toggler-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarIdentificacao" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="navbarIdentificacao">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Notícias</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Pronatec
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Alunos</a>
+                            <a class="dropdown-item" href="#">Disciplinas</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Grade Curricular</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            MedioTec
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Alunos</a>
+                            <a class="dropdown-item" href="#">Disciplinas</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Grade Curricular</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Administrativo
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Coordenação</a>
+                            <a class="dropdown-item" href="#">Professores</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Diário</a>
+                        </div>
+                    </li>
+
+                </ul>
+                <!--Formulário de Pesquisa-->
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Digite aqui..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
             </div>
+        </nav>
 
-        <div class="row border">
-                <div id="conteudo" class="col-md-8 border">
-               
+        <header id="cabecalho" class="media row text-center bg-danger  mb-3">
+            <img src="img/logo.jpeg" class="border  rounded-circle mr-3">
+            <div class="media-body">
+                <p></p>
+                <h2 class="mt-0">EE CARLOS DRUMMOND DE ANDRADE</h2>
+                <h4>Anastácio - MS / 2018</h4>
 
-                </div>
-                <div id="menu" class="col-md-4 border"> 
-                    <ol type="a">
-                        <li><a href="index.html" >Home</a></Home></li>
-                        <li><a href="#">Downlods</a></li>
-                        <li><a href="#">Alunos</a></li>
+                <p>Endereço: Rua ACOGO, S/N - VILA MAIOR</p>
+                Telefone: (67) 3245-1704
 
-                    </ol>
+                <br>
+                
+            </div>
+            <img width="30%" class="rounded float-right baner" src="img/fundamental-banner.png">
+        </header>
 
-                </div>
+        <div class="row ">
+            <article id="conteudo" class="col-md-10 ">
+                <img id="imgconteudo" src="img/siteparaescola.jpg">
+
+            </article>
+            <aside id="menu" class="col-md-2 border">
+
+                <ul class="nav ">
+
+                    <li>
+                        <a class="nav-link" onclick="carregar('html/load.html');" href="#">Alunos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link " onclick="carregar('html/load.html');" href="#">Arquivos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link " onclick="carregar('html/load.html');" href="#">Apostilas</a>
+                    </li>
+                    <li>
+                        <a class="nav-link " onclick="carregar('html/load.html');" href="#">Downloads</a>
+                    </li>
+                    <li>
+                        <a class="nav-link " onclick="carregar('html/load.html');" href="#">Tutorias</a>
+                    </li>
+                </ul>
+            </aside>
         </div>
-        <div id="rodape" class="row border">
-            <div class="border col-sm-6 col-md-1 col-lg-3">1</div>
-            <div class="border col-sm-6 col-md-1 col-lg-3">1</div> 
-            <div class="border col-sm-6 col-md-1 col-lg-3">1</div> 
-            <div class="border col-sm-6 col-md-1 col-lg-3">1</div> 
-            <div class="border col-sm-6 col-md-1 col-lg-3">1</div> 
-            <div class="border col-sm-6 col-md-1 col-lg-3">1</div> 
-            <div class="border col-sm-6 col-md-1 col-lg-3">1</div> 
-            <div class="border col-sm-6 col-md-1 col-lg-3">1</div> 
-            <div class="border col-sm-6 col-md-1 col-lg-3">1</div> 
-            <div class="border col-sm-6 col-md-1 col-lg-3">10</div> 
 
+        <footer class="row text-center footer bg-danger navbar-fixed-bottom">
 
+            <div>
+                <p>Desenvolvedores: Alunos do curso Mediotec </p>
 
-        </div>
+                Site para Escola - Criação de Site Para Escola e Marketing Educacional Online
+                <br> (11) 97396-2183 (13) 3426-9871
+                <br> Rua Maria Helena Braga de Almeida Batista, 288 - Cibratel - Itanhaém/SP
+                <br>
 
+                <h1>WEBMAIL - Criação Site Para Escola</h1>
 
+                <h6> Associação Nova Escola © 2018 - Todos os direitos reservados. É proibida a reprodução total ou parcial deste
+                    website, em qualquer meio de comunicação, sem prévia autorização.
+                </h6>
+            </div>
+        </footer>
 
 
     </div>
 
+    <!--FUNÇÃO DO MENU PARA CHAMAR PÁGINAS
+<script>
+function carregar(pagina){
+        $("#conteudo").load(pagina);}
+</script>-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS
+    <script src="jquery-slim.min.js"></script> -->
+    <script src="popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-    
 </body>
+
 </html>
