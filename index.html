@@ -87,7 +87,7 @@
             </div>
         </nav>
 
-        <header id="cabecalho" class="media row text-center bg-danger  mb-3">
+        <header id="cabecalho" class="media row text-center bg-primary  mb-3">
             <img src="img/logo.jpeg" class="border  rounded-circle mr-3">
             <div class="media-body">
                 <p></p>
@@ -104,11 +104,80 @@
         </header>
 
         <div class="row ">
-            <article id="conteudo" class="col-md-10 ">
+            <article id="conteudo" class="col-md-10 text-center ">
+                    <div class="card-deck">
+                        <div class="card text-black bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Turma A</div>
+                            <div class="card-body">
+                                <h5 class="card-title">MedioTec / 2017</h5>
+                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                <input type="button" class="btn btn-primary mr-auto" value="Informações aqui...">
+                            </div>
+                        </div>
+                    
+                        <div class="card text-black bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Turma B</div>
+                            <div class="card-body">
+                                <h5 class="card-title">MedioTec / 2018</h5>
+                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                            </div>
+                        </div>
+                    
+                        <div class="card text-black bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header">Turma C</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pronatec / 2018</h5>
+                                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                            </div>
+                        </div>
+                                          
+                    </div>
+
+                    <div class="card-deck">
+
+                            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                    <div class="card-header">MODULO I</div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Título de Card Secondary</h5>
+                                        <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                    </div>
+                            </div>
+                                               
+                            <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                                <div class="card-header">MODULO II</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Título de Card Secondary</h5>
+                                    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                </div>
+                            </div>
+                        
+                            <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                                <div class="card-header">MODULO III</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Título de Card Secondary</h5>
+                                    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                </div>
+                            </div>
+                        
+                            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                                <div class="card-header">MODULO IV</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Título de Card Secondary</h5>
+                                    <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                                </div>
+                            </div>
+
+                            
+    
+                            
+                        </div>
+
                 <img id="imgconteudo" src="img/siteparaescola.jpg">
 
+
+
             </article>
-            <aside id="menu" class="col-md-2 border">
+            <aside id="menu" class="col-md-2 border" style="background-color: rgb(31, 31, 30);color: white;">
 
                 <ul class="nav ">
 
@@ -128,10 +197,15 @@
                         <a class="nav-link " onclick="carregar('html/load.html');" href="#">Tutorias</a>
                     </li>
                 </ul>
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active"  data-toggle="pill" onclick="carregar('html/load.html');" href="#" >Home</a>
+                        <a class="nav-link "  data-toggle="pill" onclick="carregar('html/load.html');" href="#" >Home</a>
+                       
+                      </div>
             </aside>
         </div>
 
-        <footer class="row text-center footer bg-danger navbar-fixed-bottom">
+        <footer class="row text-center footer bg-primary navbar-fixed-bottom">
 
             <div>
                 <p>Desenvolvedores: Alunos do curso Mediotec </p>

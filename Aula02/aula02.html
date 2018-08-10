@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 02 -Variavéis</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <!--Linkando o arquivo variaveis.js -->  
+    <script src="js/variaveis.js"></script>
+   
+<body>
+    <div class="container">
+        <h1>O que é Variável?</h1>
+        <p>
+            Definição: Variável representa um endereço na memoria RAM; para armazenar valores de tipos diferentes exemplo(caracteres,
+            números, simbolos, valores lógicos).
+        </p>
+        <h1>As variáveis devem ser criadas seguindo as regras</h1>
+        <ol type="circle">
+            <li>Devem começar por uma letra, $ ou _.</li>
+            <li>Após a primeira letra podem conter números.</li>
+            <li>pela convenção, começa com letra minúscula e usa camelCase.</li>
+            <li>Não pode ter espaço; use o underscore _ ex:(nota_1)</li>
+            <li>JavaScript é CaseSensitive</li>
+        </ol>
+        <div class="anotacao">
+            Anotações - Lembrentes - Muito Importante !!!
+            <p>Todo conteúdo de uma variável String deve estar entres  (dentro) de Aspas simples ou duplas ex: let nome='Jairo';</p>
+            <p>Numeros não devem conter Aspas simples ou duplas ex: let nota1=10;</p>
+        </div>
+
+    </div>
+    <!--Inicio da div Contaniner-->
+        <div class="container border " style="background-color: rgb(241, 236, 241)">
+            <h1>Meu Primeiro exemplo de variável em JavaScript</h1>
+            <script>//Todo comando em Javascript deve estar entre(dentro) do elemento (tag) <script>
+                document.write('Alunos do ' + nome, NOME);
+            </script>
+        
+            <div style="background-color: gold">
+                <h1>Exercícios</h1>
+                <ol>
+                    <li> Faça um algoritimo para calcular a média dos alunos; sabendo que cada 
+                        Aluno possui 02 nota de Avaliação e 01 nota de trabalho. Exiba o resultado da média
+                         final deste Aluno.
+                    </li>
+                    <li>Faça um algoritmo para calcular a idade de uma pessoa e exiba quantos dias ela 
+                        respirou até hoje.
+                    </li>
+                    <li>
+                        Desenvolva um algoritmo para calcular a area do circulo.
+                    </li>
+                    <li>
+                        Duas pessoas se cassaram(Ana Oliveira Bela x Pedro Silva Felicidade), Depois de alguns anos tiveram 
+                        uma linda filha, cujo primeiro nome era Izabella. Construa um algoritimo que pega o segundo sobrenome
+                         da mãe e concactene com o ultimo sobrenome do pai.
+                    </li>
+
+                </ol>
+                
+            </div> <!--Fim da div exercicios-->
+            <div class="resolucao text-center">
+                <h1>Resolução dos algoritmo</h1>
+                <h3>Exercícios 01</h3>
+                <script>
+
+                document.writeln('Nota01 da Avaliação:= '+nota_Aval_01+' Nota02 da Avaliação:= '+nota_Aval_02+
+                ' Nota do trabalho:= '+notaTrabalho + '\n A media dos Aluno é: '+media.toFixed(2));                
+                
+                
+                
+                </script>
+
+            </div>
+
+        </div><!--Inicio da div Contaniner-->
+
+    
+</body>
+</html> 
